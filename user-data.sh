@@ -8,11 +8,12 @@ apt-get upgrade -y
 apt-get install git -y
 
 #Baixando o repositório
-git clone https://github.com/rturatti/prometheus-install.git
+git clone https://github.com/rturatti/prometheus-install.git /tmp/prometheus-install
 
 #Executando o script de instalação
-cd prometheus-install
+cd /tmp/prometheus-install
 chmod +x full_installation.sh
+chmod +x *.sh
 ./full_installation.sh
 
 echo "Instalação finalizada!"
