@@ -4,6 +4,9 @@
 apt-get update -y
 apt-get upgrade -y
 
+#Setart timezone São Paulo
+timedatectl set-timezone America/Sao_Paulo
+
 #Instalando o git
 apt-get install git -y
 
